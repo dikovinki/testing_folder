@@ -11,7 +11,7 @@
 
         <div class="navbar">
             <div class="logo">
-                <img src="images/logo.png" alt="log-img">
+                <a href="https://dikovinki.ca/" target="blanc"> <img src="images/logo.png" alt="log-img"></a>
             </div>
             <nav>
                 <ul>
@@ -22,7 +22,7 @@
                 </ul>
             </nav>
             <div class="user">
-                <p>Geraldine Thomas</p>
+                <p>Andrey Zhelkovsky</p>
                 <img src="images/user.png" alt="User-img">
             </div>
         </div>
@@ -40,42 +40,44 @@
         <div class="msg-container">
             <div id="slider">
                 <div class="msg-col">
-                    <h1>The Reasoning</h1>
+                    <h1>The Period</h1>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Tempore voluptate incidunt optio omnis aut, fuga unde alias,
-                        officiis minima quidem quod veniam ab modi dolores accusantium
-                        nostrum necessitatibus quae dolorem.
+                        It was the best of times, it was the worst of times, it was the age of wisdom,
+                        it was the age of foolishness, it was the epoch of belief, it was the epoch of
+                        incredulity, it was the season of Light, it was the season of Darkness, it was
+                        the spring of hope, it was the winter of despair, we had everything before us,
+                        we had nothing before us...
                     </p>
                     <a href="">Learn More</a>
                 </div>
                 <div class="msg-col">
-                    <h1>The Knowledge</h1>
+                    <h1>The Mail</h1>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Tempore voluptate incidunt optio omnis aut, fuga unde alias,
-                        officiis minima quidem quod veniam ab modi dolores accusantium
-                        nostrum necessitatibus quae dolorem.
+                        The Dover mail was in its usual genial position that the guard suspected the passengers,
+                        the passengers suspected one another and the guard, they all suspected everybody else,
+                        and the coachman was sure of nothing but the horses; as to which cattle he could with a
+                        clear conscience have taken his oath on the two...
+                        
                     </p>
                     <a href="">Learn More</a>
                 </div>
                 <div class="msg-col">
-                    <h1>The Integration</h1>
+                    <h1>The Shadows</h1>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Tempore voluptate incidunt optio omnis aut, fuga unde alias,
-                        officiis minima quidem quod veniam ab modi dolores accusantium
-                        nostrum necessitatibus quae dolorem.
+                        A wonderful fact to reflect upon, that every human creature is constituted to be that profound
+                        secret and mystery to every other. A solemn consideration, when I enter a great city by night,
+                        that every one of those darkly clustered houses encloses its own secret; that every room in every
+                        one of them encloses its own secret; 
                     </p>
                     <a href="">Learn More</a>
                 </div>
                 <div class="msg-col">
-                    <h1>The Learning</h1>
+                    <h1>The Preparation</h1>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Tempore voluptate incidunt optio omnis aut, fuga unde alias,
-                        officiis minima quidem quod veniam ab modi dolores accusantium
-                        nostrum necessitatibus quae dolorem.
+                        He had a healthy colour in his cheeks, and his face, though lined, bore few traces of anxiety.
+                        But, perhaps the confidential bachelor clerks in Tellson's Bank were principally occupied with
+                        the cares of other people; and perhaps second-hand cares, like second-hand clothes, come easily
+                        off and on. 
                     </p>
                     <a href="">Learn More</a>
                 </div>
@@ -90,7 +92,35 @@
             <div id="active"></div>
 
         </div>
+<!-- Sliding effect on the text blocs-->
+<script>
 
+    var slider = document.getElementById('slider');
+    var active = document.getElementById('active');
+    var line1 = document.getElementById('line1');
+    var line2 = document.getElementById('line2');
+    var line3 = document.getElementById('line3');
+    var line4 = document.getElementById('line4');
+
+    line1.onclick = function(){
+        slider.style.transform = 'translateX(0)';
+        active.style.top = '0px';
+    }
+    line2.onclick = function(){
+        slider.style.transform = 'translateX(-25%)';
+        active.style.top = '80px';
+    }
+    line3.onclick = function(){
+        slider.style.transform = 'translateX(-50%)';
+        active.style.top = '160px';
+    }
+    line4.onclick = function(){
+        slider.style.transform = 'translateX(-75%)';
+        active.style.top = '240px';
+    }
+
+
+</script>
         
 
     </div>
